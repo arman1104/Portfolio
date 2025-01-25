@@ -1,0 +1,85 @@
+.about-container {
+  margin-top: 6rem;
+}
+
+.about-heading h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.about-heading h1::after {
+  content: "";
+  display: block;
+  width: 8%;
+  height: 3px;
+  background: linear-gradient(90deg, #4f46e5, #38bdf8);
+  /* background: linear-gradient(90deg, #f32170, #ff6b08); */
+  margin: 0.5rem auto 0;
+  border-radius: 5px;
+}
+
+.about-para {
+  max-width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.para1,
+.para2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #aaaaaacc;
+  line-height: 1.6;
+}
+
+.role-highlight {
+  color: rgb(245, 68, 4);
+  font-style: bold;
+}
+
+.skills-highlight {
+  color: #fbf46d;
+  font-style: bold;
+}
+.name-highlight {
+  color: #16c47f;
+}
+
+/* Styles for mobiles */
+@media (max-width: 480px) {
+  .about-container {
+    margin-top: 3rem;
+  }
+  .about-heading h1 {
+    font-size: 1.8rem;
+  }
+  .about-para {
+    width: 60%;
+  }
+
+  .para1,
+  .para2 {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
+/* Styles for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .about-container {
+    margin-top: 4rem;
+  }
+  .about-heading h1 {
+    font-size: 2rem;
+  }
+
+  .para1,
+  .para2 {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+}

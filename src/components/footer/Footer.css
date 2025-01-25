@@ -1,0 +1,48 @@
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: #aaaa;
+  margin: 3rem auto;
+  border-radius: 5px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-icon {
+  font-size: 1.6rem;
+  color: #aaaa;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #fff;
+}
+
+/* Styles for mobile */
+@media (max-width: 480px) {
+  .footer-icon {
+    font-size: 1.4rem;
+  }
+}
+/* Styles for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer-icon {
+    font-size: 1.4rem;
+  }
+}
