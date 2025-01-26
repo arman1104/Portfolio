@@ -134,8 +134,8 @@
     margin-top: 1rem;
   }
   .code-snippet {
-    font-size: 10px;
-    line-height: 1.3;
+    font-size: 12px;
+    line-height: 1.4;
   }
 }
 
@@ -176,6 +176,6 @@
     margin-top: 1rem;
   }
   .code-snippet {
-    font-size: 12px;
+    font-size: 13px;
   }
 }

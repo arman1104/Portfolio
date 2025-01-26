@@ -1,103 +1,3 @@
-// import React, { useState } from "react";
-// import emailjs from "emailjs-com";
-// import "./Contact.css";
-
-// const Contact = () => {
-//   const [formData, setFormData] = useState({
-//     name: "",
-//     email: "",
-//     message: "",
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({ ...formData, [name]: value });
-//   };
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs
-//       .send(
-//         "service_7rayd0r", // Replace with your Service ID
-//         "template_aysxwub", // Replace with your Template ID
-//         formData,
-//         "LNAJki6db9Lil9fVR" // Replace with your Public Key
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result);
-//           alert("Message sent successfully!");
-//           // Clear form data after successful email send
-//           setFormData({
-//             name: "",
-//             email: "",
-//             message: "",
-//           });
-//         },
-//         (error) => {
-//           console.error(error);
-//           alert("Failed to send message, please try again.");
-//         }
-//       );
-//   };
-
-//   return (
-//     <div>
-//       <section className="contact-container">
-//         <h1>Contact</h1>
-//         <form id="contact-form" className="form-container" onSubmit={sendEmail}>
-//           <div className="name-container">
-//             <label htmlFor="name">Name</label>
-//             <input
-//               type="text"
-//               id="name"
-//               name="name"
-//               placeholder="Enter your name"
-//               required
-//               autoComplete="name"
-//               value={formData.name}
-//               onChange={handleChange}
-//             />
-//           </div>
-
-//           <div className="email-container">
-//             <label htmlFor="email">Email</label>
-//             <input
-//               type="email"
-//               id="email"
-//               name="email"
-//               placeholder="Enter your email"
-//               required
-//               autoComplete="email"
-//               value={formData.email}
-//               onChange={handleChange}
-//             />
-//           </div>
-
-//           <div className="msg-container">
-//             <label htmlFor="message">Message</label>
-//             <textarea
-//               id="message"
-//               name="message"
-//               placeholder="Type your message..."
-//               required
-//               autoComplete="off"
-//               value={formData.message}
-//               onChange={handleChange}
-//             ></textarea>
-//           </div>
-//           <button type="submit">Send Message</button>
-//         </form>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
-// !   /////////////////////////////
-
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
@@ -121,10 +21,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_7rayd0r", // Replace with your Service ID
-        "template_aysxwub", // Replace with your Template ID
+        "service_7rayd0r",
+        "template_aysxwub",
         formData,
-        "LNAJki6db9Lil9fVR" // Replace with your Public Key
+        "LNAJki6db9Lil9fVR"
       )
       .then(
         (result) => {

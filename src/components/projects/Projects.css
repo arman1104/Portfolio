@@ -12,7 +12,7 @@
 .projects-container h1::after {
   content: "";
   display: block;
-  width: 5%;
+  width: 8%;
   height: 3px;
   background: linear-gradient(90deg, #4f46e5, #38bdf8);
   /* background: linear-gradient(90deg, #f32170, #ff6b08); */
@@ -118,7 +118,7 @@
   }
   .view-Project-btn,
   .github-btn {
-    padding: 6px 12px;
+    padding: 5px 10px;
     font-size: 0.65rem;
   }
 }
