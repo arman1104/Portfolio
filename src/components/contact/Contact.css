@@ -71,6 +71,24 @@
   cursor: pointer;
 }
 
+/* Success message style */
+.status-message.success {
+  color: green;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Error message style */
+.status-message.error {
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+}
+
 /* Styles for mobile */
 @media (max-width: 480px) {
   .contact-container h1 {
@@ -78,12 +96,12 @@
   }
 
   .contact-container input {
-    width: 16rem;
+    width: 17rem;
     height: 1.8rem;
   }
 
   .form-container textarea {
-    width: 16rem;
+    width: 17rem;
     height: 4rem;
   }
 

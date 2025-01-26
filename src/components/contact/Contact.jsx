@@ -4,11 +4,13 @@ import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    reply_to: "",
     message: "",
   });
   const [isSending, setIsSending] = useState(false); // State to track the sending status
+  const [statusMessage, setStatusMessage] = useState(""); // State for the status message
+  const [statusType, setStatusType] = useState(""); // State for the type of status (success or error)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,7 +19,9 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setIsSending(true); // Set sending state to true when sending begins
+    setIsSending(true);
+    setStatusMessage(""); // Clear any previous status message
+    setStatusType(""); // Clear the status type
 
     emailjs
       .send(
@@ -29,20 +33,27 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result);
-          alert("Message sent successfully!");
+          setStatusMessage("Message sent successfully!");
+          setStatusType("success"); // Set type to success
+          setFormData({ from_name: "", reply_to: "", message: "" });
+          setIsSending(false);
 
-          // Clear form data after successful email send
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
-          setIsSending(false); // Reset sending state after success
+          // Remove the message after 3 second
+          setTimeout(() => {
+            setStatusMessage("");
+          }, 3000);
         },
         (error) => {
           console.error(error);
-          alert("Failed to send message, please try again.");
-          setIsSending(false); // Reset sending state after failure
+          setStatusMessage("Failed to send message. Please try again.");
+          setStatusType("error"); // Set type to error
+          setFormData({ from_name: "", reply_to: "", message: "" });
+          setIsSending(false);
+
+          // Remove the message after 3 second
+          setTimeout(() => {
+            setStatusMessage("");
+          }, 3000);
         }
       );
   };
@@ -53,29 +64,29 @@ const Contact = () => {
         <h1>Contact</h1>
         <form id="contact-form" className="form-container" onSubmit={sendEmail}>
           <div className="name-container">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="from_name">Name</label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="from_name"
+              name="from_name"
               placeholder="Enter your name"
               required
               autoComplete="name"
-              value={formData.name}
+              value={formData.from_name}
               onChange={handleChange}
             />
           </div>
 
           <div className="email-container">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="reply_to">Email</label>
             <input
               type="email"
-              id="email"
-              name="email"
+              id="reply_to"
+              name="reply_to"
               placeholder="Enter your email"
               required
               autoComplete="email"
-              value={formData.email}
+              value={formData.reply_to}
               onChange={handleChange}
             />
           </div>
@@ -97,6 +108,16 @@ const Contact = () => {
             {isSending ? "Sending..." : "Send Message"}
           </button>
         </form>
+        {/* Display the status message with dynamic color */}
+        {statusMessage && (
+          <p
+            className={`status-message ${
+              statusType === "success" ? "success" : "error"
+            }`}
+          >
+            {statusMessage}
+          </p>
+        )}
       </section>
     </div>
   );

@@ -59,13 +59,13 @@
     font-size: 1.8rem;
   }
   .about-para {
-    width: 60%;
+    max-width: 75%;
   }
 
   .para1,
   .para2 {
-    font-size: 0.8rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }
 /* Styles for tablets */
