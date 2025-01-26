@@ -124,7 +124,7 @@
 
   .contact-btn,
   .cv-btn {
-    padding: 6px 12px;
+    padding: 8px 16px;
     font-size: 0.8rem;
   }
 
@@ -135,7 +135,7 @@
   }
   .code-snippet {
     font-size: 12px;
-    line-height: 1.4;
+    line-height: 1.35;
   }
 }
 
@@ -166,7 +166,7 @@
 
   .contact-btn,
   .cv-btn {
-    padding: 8px 16px;
+    padding: 9px 18px;
     font-size: 0.9rem;
   }
 
