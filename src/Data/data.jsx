@@ -11,7 +11,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const cvLink =
-  "https://drive.google.com/uc?export=download&id=1V976Y-It2xDWZYeEWmVfWD-EpiD0NO-f";
+  // "https://drive.google.com/uc?export=download&id=1V976Y-It2xDWZYeEWmVfWD-EpiD0NO-f";
+  "https://drive.google.com/uc?export=download&id=1ESXrOi0ntHcA4R9R3mMYBbHO3Wd5Nddb";
 
 export const skills = [
   { id: 1, name: "HTML", icon: <FaHtml5 color="#E34F26" size="2rem" /> },
