@@ -71,6 +71,10 @@
   cursor: pointer;
 }
 
+.form-container button:hover {
+  transform: translateY(-1px);
+  border: 1px solid rgba(133, 133, 195, 0.5);
+}
 /* Success message style */
 .status-message.success {
   color: green;
