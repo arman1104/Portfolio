@@ -48,7 +48,10 @@ const Hero = () => {
               ,
               <br />
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <span className="string">'Tailwind CSS'</span>
+              <span className="string">'Tailwind CSS'</span>,
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span className="string">'Git'</span>
               <br />
               &nbsp;&nbsp;],
               <br />
