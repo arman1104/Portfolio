@@ -5,14 +5,15 @@ import { MdPhoneIphone } from "react-icons/md";
 import { TiWeatherCloudy } from "react-icons/ti";
 import { FcGlobe } from "react-icons/fc";
 import { FaVrCardboard } from "react-icons/fa";
+import { GiShoppingCart } from "react-icons/gi";
 
 import { IoMail } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const cvLink =
-  // "https://drive.google.com/uc?export=download&id=1ESXrOi0ntHcA4R9R3mMYBbHO3Wd5Nddb";
-  "https://drive.google.com/uc?export=download&id=110ViTO6Og1YRTFu4MqIGKZVygb2_S-1u";
+  // "https://drive.google.com/uc?export=download&id=110ViTO6Og1YRTFu4MqIGKZVygb2_S-1u";
+  "https://drive.google.com/uc?export=download&id=18x8mM8btsv0A65yNpILigpebfuk9pSXT";
 
 export const skills = [
   { id: 1, name: "HTML", icon: <FaHtml5 color="#E34F26" size="2rem" /> },
@@ -32,6 +33,15 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    id: 4,
+    name: "Cartify",
+    description:
+      "Cartify is a modern e-commerce web app built with React and Tailwind CSS, featuring real-time cart updates, product search, and a fully responsive, intuitive shopping experience.",
+    icon: <GiShoppingCart size="3rem" color="#5AB2FF" />,
+    project_link: "https://cartify-one-sooty.vercel.app/",
+    github_link: "https://github.com/arman1104/Cartify",
+  },
   {
     id: 1,
     name: "Weather App",
