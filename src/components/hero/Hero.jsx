@@ -44,6 +44,9 @@ const Hero = () => {
               &nbsp;&nbsp;&nbsp;&nbsp;
               <span className="string">'JavaScript'</span>
               ,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span className="string">'TypeScript'</span>
+              ,<br />
               &nbsp;&nbsp;&nbsp;&nbsp;<span className="string">'React JS'</span>
               ,
               <br />

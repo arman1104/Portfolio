@@ -18,9 +18,11 @@ const About = () => {
         </p>
         <p className="para2">
           I specialize in <span className="skills-highlight">React.js</span> and
-          modern <span className="skills-highlight">JavaScript</span>, with a
-          strong foundation in <span className="skills-highlight">HTML5</span>{" "}
-          and <span className="skills-highlight">CSS3</span>. I enjoy using{" "}
+          modern{" "}
+          <span className="skills-highlight">JavaScript & TypeScript</span>,
+          with a strong foundation in{" "}
+          <span className="skills-highlight">HTML5</span> and{" "}
+          <span className="skills-highlight">CSS3</span>. I enjoy using{" "}
           <span className="skills-highlight">Tailwind CSS</span> for creating
           beautiful, responsive designs that provide excellent user experiences
           across all devices.

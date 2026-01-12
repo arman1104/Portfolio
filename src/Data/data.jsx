@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { MdPhoneIphone } from "react-icons/md";
 
 import { TiWeatherCloudy } from "react-icons/ti";
@@ -19,14 +19,19 @@ export const skills = [
   { id: 1, name: "HTML", icon: <FaHtml5 color="#E34F26" size="2rem" /> },
   { id: 2, name: "CSS", icon: <FaCss3Alt color="#1572B6" size="2rem" /> },
   { id: 3, name: "JavaScript", icon: <FaJs color="#F7DF1E" size="2rem" /> },
-  { id: 4, name: "React JS", icon: <FaReact color="#61DAFB" size="2rem" /> },
   {
-    id: 5,
+    id: 4,
+    name: "TypeScript",
+    icon: <SiTypescript color="#1572B6" size="2rem" />,
+  },
+  { id: 5, name: "React JS", icon: <FaReact color="#61DAFB" size="2rem" /> },
+  {
+    id: 6,
     name: "Tailwind CSS",
     icon: <SiTailwindcss color="#38B2AC" size="2rem" />,
   },
   {
-    id: 6,
+    id: 7,
     name: "Responsive Design",
     icon: <MdPhoneIphone color="#4A90E2" size="2rem" />,
   },
