@@ -48,8 +48,10 @@ export const projects = [
     description:
       "A weather application that provides real-time weather information including temperature, humidity, and wind speed for any city or country.",
     icon: <TiWeatherCloudy size="3rem" color="#5AB2FF" />,
-    project_link: "https://weather1-app.vercel.app/",
-    github_link: "https://github.com/arman1104/Weather-App",
+    // project_link: "https://weather1-app.vercel.app/",
+    // github_link: "https://github.com/arman1104/Weather-App",
+    project_link: "https://weatherapp-alpha-lovat.vercel.app/",
+    github_link: "https://github.com/arman1104/Weather_App",
   },
   {
     id: 2,
